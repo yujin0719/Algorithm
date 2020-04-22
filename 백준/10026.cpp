@@ -1,3 +1,4 @@
+//10026: 적록색약
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -15,7 +16,7 @@ int main(){
   cin >> N;
   for(int i = 0; i < N; i++)
     cin >> board[i];
-  
+
   queue<pair<int,int> > q;
   int origin = 0;
   int error = 0;
@@ -38,18 +39,18 @@ int main(){
                 }
               }
             }
-          } 
+          }
         }
-      }  
+      }
     }
   }
-  
+
   for(int i = 0; i < N; i++){
     fill(vis[i],vis[i]+N,0);
     for(int j = 0; j < N; j++){
       if(board[i][j] == 'G')
         board[i][j] = 'R';
-      
+
     }
   }
 
@@ -71,9 +72,9 @@ int main(){
                 }
               }
             }
-          } 
+          }
         }
-      }  
+      }
     }
   }
    cout << origin  << ' ' << error << '\n';

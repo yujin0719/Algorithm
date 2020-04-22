@@ -1,3 +1,4 @@
+// 1074: Z
 #include <bits/stdc++.h>
 using namespace std;
 int N,r,c,cnt =0;

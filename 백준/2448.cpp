@@ -1,3 +1,4 @@
+//2448 : 별찍기-11
 #include <bits/stdc++.h>
 using namespace std;
 int N;

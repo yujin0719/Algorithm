@@ -1,5 +1,4 @@
 // 2016년
-
 #include <string>
 #include <vector>
 

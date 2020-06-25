@@ -59,11 +59,15 @@ v.insert(a,b,c)|a번째 위치에 b개의 c를 삽입
 ### 4. vector 중복제거 : unique, erase 활용 
 - unique는 algorithm 헤더에 포함되어 있다.
 - unique 함수는 vector에서 중복되지 않는 원소들을 앞에서부터 채워나가는 함수이다.
+- <strong>unique함수는 중복되지 않은 마지막 원소의 iterator를 반환한다.</strong>
 - erase 함수는 vector에서 특정 원소를 삭제하는 함수이다.
 - v.erase(v.begin()+s, v.begin()+e) :  s부터 e-1까지의 원소가 삭제
 
 ```
 v.erase(unique(v.begin(),v.end()),v.end());
 ```
+- unique를 써서 vector의 중복된 원소를 제거해도 vector의 크기(size)는 줄어들지 않음. resize를 이용해서 줄여줘야 한다.
+
+
 
  

@@ -29,17 +29,36 @@ length()|문자열 길이반환
 size()|문자열 길이반환
 capacity()|사용중인 메모리 크기 반환
 
+<hr>
 
 메소드명 | 설명 | 특징
 ---|---|---
-append()|문자열 연결|append()는 인자로 char를 사용할 수 없다. <br> char를 더해주고 싶은 경우 "+" 연산을 이용
+append()|문자열 연결|1. append()는 인자로 char를 사용할 수 없다. <br> 2. char를 더해주고 싶은 경우 "+" 연산을 이용
 insert()|문자열 삽입|`str.insert(2,"bbb");` index가 2인 위치에 있는 문자 앞에 삽입
 replace()|문자열 대체|`str.replace(2,3,"bbb");` index가 2인 위치에 있는 문자부터 ~ 3개의 문자를 "bbb"로 대체
 erase()|부분 지우기|`str.erase(1,4);` index 1~4인 부분을 지움
 clear()|전체 지우기|
 substr()|문자 자르기|`str.substr(2);` index 2의 위치부터 끝까지 문자를 반환
-find()|문자가 존재하는 경우, 해당 위치의 index 반환받기<br>문자열이 존재하는 경우, 문자열이 시작되는 index 반환받기<br>존재하지 않으면 -1을 반환받음|
-stoi()|string->int로 변환<br>반드시 string형을 넘겨야함, char은 안됨|`stoi(str);`
+find()|1. 문자가 존재하는 경우, 해당 위치의 index 반환받기<br>2. 문자열이 존재하는 경우, 문자열이 시작되는 index 반환받기<br>3. 존재하지 않으면 -1을 반환받음|
+
+<hr>
+
+메소드명 | 설명 | 특징
+---|---|---
+stoi()|1. string->int로 변환<br>2. 반드시 string형을 넘겨야함, char은 안됨|`stoi(str);`
 to_string()|int->string로 변환|`str = to_string(a);`
+isdigit()|숫자판별|
+isalpha()|영어판별|
+
+<hr>
+
+메소드명 | 설명 
+---|---
+pop_back() | 맨 뒤의 문자를 pop
+push_back() | 맨 뒤에 push
+front() | 맨 앞의 문자 반환
+back() | 맨 뒤의 문자 반환
+
+- pop,push,front,back과 같은 메소드가 코딩테스트에서 유용하게 사용될 수 있다. 
 
  

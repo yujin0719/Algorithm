@@ -8,7 +8,10 @@
 #### 2. greater : 내림차순 정렬
 
 `sort(arr,arr+5,greater<int>());`
-- less: 오름차순
+- greater : 첫 번째 인자가 두 번째 인자보다 크면 true  <strong>내림차순 </strong>
+- less : 첫 번째 인자가 두 번째 이낮보다 작으면 true <strong>오름차순 </strong>
+- plus : 두 개의 인자를 더한 값 반환
+- minus : 첫번째 인자에서 두 번째 인자를 뺀 값 반환
 
 #### 3. vector의 정렬 
 

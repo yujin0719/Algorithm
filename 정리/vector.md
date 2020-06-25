@@ -53,3 +53,17 @@ v.insert(a,b)|a번째 위치에 b를 삽입
 v.insert(a,b,c)|a번째 위치에 b개의 c를 삽입
 
 * vector는 뒤에서만 원소를 추가할 수 있기 때문에 insert에 index를 0로 줘 앞에 추가할 수 있다. 
+
+<hr>
+
+### 4. vector 중복제거 : unique, erase 활용 
+- unique는 algorithm 헤더에 포함되어 있다.
+- unique 함수는 vector에서 중복되지 않는 원소들을 앞에서부터 채워나가는 함수이다.
+- erase 함수는 vector에서 특정 원소를 삭제하는 함수이다.
+- v.erase(v.begin()+s, v.begin()+e) :  s부터 e-1까지의 원소가 삭제
+
+```
+v.erase(unique(v.begin(),v.end()),v.end());
+```
+
+ 

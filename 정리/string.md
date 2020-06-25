@@ -37,3 +37,9 @@ insert()|문자열 삽입|`str.insert(2,"bbb");` index가 2인 위치에 있는 
 replace()|문자열 대체|`str.replace(2,3,"bbb");` index가 2인 위치에 있는 문자부터 ~ 3개의 문자를 "bbb"로 대체
 erase()|부분 지우기|`str.erase(1,4);` index 1~4인 부분을 지움
 clear()|전체 지우기|
+substr()|문자 자르기|`str.substr(2);` index 2의 위치부터 끝까지 문자를 반환
+find()|문자가 존재하는 경우, 해당 위치의 index 반환받기<br>문자열이 존재하는 경우, 문자열이 시작되는 index 반환받기<br>존재하지 않으면 -1을 반환받음|
+stoi()|string->int로 변환<br>반드시 string형을 넘겨야함, char은 안됨|`stoi(str);`
+to_string()|int->string로 변환|`str = to_string(a);`
+
+ 

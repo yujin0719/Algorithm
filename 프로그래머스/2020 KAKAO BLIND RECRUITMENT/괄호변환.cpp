@@ -47,6 +47,7 @@ string parsing(string s){
 }
 
 string solution(string p) {
-    if(check(p)) return p;
+    if(check(p))
+      return p;
     return parsing(p);
 }

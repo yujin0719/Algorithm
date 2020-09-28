@@ -1,6 +1,6 @@
 # 18352: 특정거리의 도시찾기
 # 이문제 입력받을때 map(int,input().split())히면 시간초과나온다..
-
+ㅣ
 from collections import deque
 import sys
 

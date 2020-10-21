@@ -1,5 +1,6 @@
 // 1912: 연속합
 
+
 #include <bits/stdc++.h>
 using namespace std;
 int n;

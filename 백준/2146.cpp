@@ -64,12 +64,6 @@ int main(void){
     for(int j = 0; j < n; j++)
       cin >> board[i][j];
   island();
-  for(int i = 0; i < n; i ++){
-    for(int j = 0; j < n; j++){
-      cout << board[i][j] << " ";
-    }
-    cout << "\n";
-  }
   int result = 0xffffff;
   for(int i = 0; i < n; i++){
     for(int j = 0; j < n; j++){

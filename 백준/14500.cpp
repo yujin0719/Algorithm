@@ -1,4 +1,5 @@
 // 14500: 테트로미노
+// DFS/BFS + 예외처리
 
 #include <bits/stdc++.h>
 using namespace std;

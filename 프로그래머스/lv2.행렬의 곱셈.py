@@ -9,3 +9,4 @@ def solution(arr1, arr2):
     return answer
 
     # return [[sum(a*b for a, b in zip(A_row,B_col)) for B_col in zip(*B)] for A_row in A]
+    # zip(* ) : 행과 렬을 바꿔주는 역할

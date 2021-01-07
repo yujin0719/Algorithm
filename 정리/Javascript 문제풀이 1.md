@@ -98,3 +98,7 @@
         }
         return answer;
     }
+    
+- swap 함수
+
+        [a,b] = [b,a]

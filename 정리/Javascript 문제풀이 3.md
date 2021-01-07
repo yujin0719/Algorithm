@@ -27,3 +27,5 @@
     function solution(s) {
       return Number(s);
     }
+
+- 문자열을 정수로 바꾸는 다른 방법 : **+s, s * 1, s / 1, parseInt(s)**

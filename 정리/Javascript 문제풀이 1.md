@@ -1,6 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
 ### 1. 2016
-
     function solution(a, b) {
         const month = [31,29,31,30,31,30,31,31,30,31,30,31];
         const week = ["THU","FRI","SAT","SUN","MON","TUE","WED"]
@@ -47,10 +46,25 @@
   
   
 ### 2. 가운데 글자 가져오기
-
     function solution(s) {
         const l = Math.ceil(s.length/2);
         return s.length % 2 == 0 ? s[l-1] + s[l] : s[l-1];
     }
     
 
+### 3. 같은 숫자는 싫어
+    function solution(arr){
+        return arr.filter((element,idx) => element != arr[idx+1]);
+    }
+
+- filter
+
+  - callback 함수 조건에 만족하는 요소를 구성으로하는 배열을 생성하는 함수
+  
+  - element: 요소 값
+  
+  - index: 요소의 index
+  
+  - array: 사용되는 배열의 객체
+  
+        var newArray = arr.filter((element, index, array) => {});

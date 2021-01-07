@@ -35,3 +35,24 @@
         const arr = [1, 2, 3];
         console.log(arr.includes(2));  // true
   
+### 8. 문자열 내림차순 배치하기
+    function solution(s){
+        return s.split('').sort().reverse().join('');
+    }
+    
+### 9. 문자열 다루기 기본
+    function solution(s) {
+        if(s.length != 4 && s.length != 6){
+            return false;
+        }
+        for(var i = 0; i < s.length; i++){
+            if (!Number.isInteger(Number(s[i])))
+                return false;
+        }
+        return true;
+    }
+
+### 10. 서울에서 김서방 찾기
+    function solution(seoul) {
+    return '김서방은 ' + seoul.indexOf('Kim') + '에 있다';
+    }

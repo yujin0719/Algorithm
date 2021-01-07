@@ -64,3 +64,23 @@
   - array: 사용되는 배열의 객체
   
         var newArray = arr.filter((element, index, array) => {});
+
+
+### 4. 나누어 떨어지는 숫자 배열
+    function solution(arr, divisor) {
+        var newArr = arr.filter((element) => element % divisor == 0);
+        if(newArr.length == 0){
+            newArr.push(-1);
+        }
+        return newArr.sort((a,b) => a - b);
+    }
+    
+- sort
+    - 기본 정렬 => 문자열
+    
+            arr.sort()
+    - 숫자의 경우에는 callback 함수를 사용해야한다.
+    
+            arr.sort(function(a,b) {
+                return a-b;  // 내림차순의 경우에는 b-a
+            });

@@ -1,5 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
-### <span style="color:skyblue">1. 2016<span>
+### 1. 2016
 
     function solution(a, b) {
         const month = [31,29,31,30,31,30,31,31,30,31,30,31];
@@ -46,3 +46,11 @@
     - getDay(): 주어진 날짜의 요일 반환
   
   
+### 2. 가운데 글자 가져오기
+
+    function solution(s) {
+        const l = Math.ceil(s.length/2);
+        return s.length % 2 == 0 ? s[l-1] + s[l] : s[l-1];
+    }
+    
+

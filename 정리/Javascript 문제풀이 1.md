@@ -1,5 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
-### 1. 2016
+### <span style="color:skyblue">1. 2016<span>
 
     function solution(a, b) {
         const month = [31,29,31,30,31,30,31,31,30,31,30,31];

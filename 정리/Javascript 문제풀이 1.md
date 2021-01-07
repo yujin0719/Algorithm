@@ -84,3 +84,17 @@
             arr.sort(function(a,b) {
                 return a-b;  // 내림차순의 경우에는 b-a
             });
+            
+### 5. 두 정수 사이의 합
+    function solution(a, b) {
+        var answer = 0;
+        if(a > b){
+            var tmp = a;
+            a = b;
+            b = tmp;
+        }
+        for(var i = a; i <= b; i++){
+            answer += i;
+        }
+        return answer;
+    }

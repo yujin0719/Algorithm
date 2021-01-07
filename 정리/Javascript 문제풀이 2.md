@@ -23,3 +23,15 @@
         items.sort((a, b) => a.localeCompare(b)); // ['adieu', 'café', 'cliché', 'communiqué', 'premier', 'réservé']
   
   
+### 7. 문자열 내 p와 y의 개수
+    function solution(s) {
+      const p = s.split('').filter(v => ['p', 'P'].includes(v));
+      const y = s.split('').filter(v => ['y', 'Y'].includes(v));
+      return p.length === y.length;
+    }
+    
+- includes(): 배열이 특정 요소를 포함하는지 판별하는 메소드
+
+        const arr = [1, 2, 3];
+        console.log(arr.includes(2));  // true
+  

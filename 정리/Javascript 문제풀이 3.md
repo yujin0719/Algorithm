@@ -29,3 +29,30 @@
     }
 
 - 문자열을 정수로 바꾸는 다른 방법 : **+s, s * 1, s / 1, parseInt(s)**
+
+### 14. 시저 암호
+    function solution(s, n) {
+        var answer = '';
+        for(let i = 0; i < s.length; i++){
+            if(s[i] === ' ')
+                answer += ' ';
+            else 
+                answer += String.fromCharCode((s.charCodeAt(i) > 90) ? (s.charCodeAt(i)+n-97)%26+97 : (s.charCodeAt(i)+n-65)%26+65) ;
+        }
+        return answer;
+    }
+- String.fromCharCode(): 유니코드를 입력으로 받아 **문자열**을 반환
+
+- charCodeAt(idx): 입력된 index에 해당하는 **유니코드**를 반환
+
+- charAt(idx): 입력된 index에 해당하는 **문자**를 반환
+
+### 15. 약수의 합
+    function solution(n) {
+        return Array(n).fill().map((v, i) => i + 1).reduce((a, c) => n % c ? a : a + c, 0)
+    }
+- fill
+
+- map
+
+- reduce 

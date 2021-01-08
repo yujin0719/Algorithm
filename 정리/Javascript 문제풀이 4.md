@@ -16,3 +16,19 @@
         }
         return answer;
     }
+
+### 18. 자연수 뒤집어 배열로 만들기
+    function solution(n) {
+        const num = String(n);
+        return num.split("").map((e) => Number(e)).reverse();
+    }
+
+### 19. 정수 내림차순으로 배치하기
+    function solution(n) {
+        const num = String(n);
+        return parseInt(num.split("").sort((a,b) => b-a).join(""));
+    }
+### 20. 정수 제곱근 판별
+    function solution(n) {
+        return Number.isInteger(Math.sqrt(n)) ? (Math.sqrt(n)+1)**2 : -1;
+    }

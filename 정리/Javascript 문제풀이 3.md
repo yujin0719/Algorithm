@@ -54,16 +54,23 @@
 - fill: 배열의 시작 인덱스부터 끝 인덱스의 이전까지 정적인 값 하나로 채우는 메소드
     - arr.fill(value[, start[, end]])
     
-             const arr1 = [1, 2, 3, 4];
-             console.log(arr1.fill(0, 2, 4)); // [1, 2, 0, 0]
+             const arr = [1, 2, 3, 4];
+             console.log(arr.fill(0, 2, 4)); // [1, 2, 0, 0]
 
 - map: 배열 내의 모든 요소에 대하여 주어진 함수를 호출한 결과의 배열을 반환하는 메소드
 
     - arr.map(callback(currentValue[, index[, array]])[, thisArg])
     
-            const arr1 = [1, 4, 9, 16];
-            const map1 = arr1.map(x => x * 2);
-            console.log(map1);  // [2, 8, 18, 32]
+            const arr = [1, 4, 9, 16];
+            const m = arr.map(x => x * 2);
+            console.log(m);  // [2, 8, 18, 32]
 
 
-- reduce 
+- reduce: 배열의 각 요소에 대해 주어진 함수를 실행하고, 하나의 결과값을 반환하는 메소드
+
+    - arr.reduce(callback[, initialValue])
+    
+            const arr = [1, 2, 3, 4];
+            const reducer = (accumulator, currentValue) => accumulator + currentValue;
+            console.log(arr.reduce(reducer)); // 10
+

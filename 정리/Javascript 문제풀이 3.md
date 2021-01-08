@@ -37,7 +37,7 @@
             if(s[i] === ' ')
                 answer += ' ';
             else 
-                answer += String.fromCharCode((s.charCodeAt(i) > 90) ? (s.charCodeAt(i)+n-97)%26+97 : (s.charCodeAt(i)+n-65)%26+65) ;
+                answer += String.fromCharCode((s.charCodeAt(i) > 90) ? (s.charCodeAt(i)+n-97)%26+97 : (s.charCodeAt(i)+n-65)%26+65);
         }
         return answer;
     }
@@ -51,8 +51,19 @@
     function solution(n) {
         return Array(n).fill().map((v, i) => i + 1).reduce((a, c) => n % c ? a : a + c, 0)
     }
-- fill
+- fill: 배열의 시작 인덱스부터 끝 인덱스의 이전까지 정적인 값 하나로 채우는 메소드
+    - arr.fill(value[, start[, end]])
+    
+             const arr1 = [1, 2, 3, 4];
+             console.log(arr1.fill(0, 2, 4)); // [1, 2, 0, 0]
 
-- map
+- map: 배열 내의 모든 요소에 대하여 주어진 함수를 호출한 결과의 배열을 반환하는 메소드
+
+    - arr.map(callback(currentValue[, index[, array]])[, thisArg])
+    
+            const arr1 = [1, 4, 9, 16];
+            const map1 = arr1.map(x => x * 2);
+            console.log(map1);  // [2, 8, 18, 32]
+
 
 - reduce 

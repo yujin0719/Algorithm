@@ -5,3 +5,18 @@
     }
     
 ### 2. 가장 큰 정사각형 찾기
+
+### 3. 올바른 괄호
+    function solution(s){
+        let cnt = 0;
+        for(let i = 0; i < s.length; i++){
+            if(s[i] === '(')
+                cnt += 1;
+            else if(cnt > 0)
+                cnt -= 1;
+            else
+                return false;
+        }
+        return cnt ? false : true;
+    }
+    

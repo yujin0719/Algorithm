@@ -1,4 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
+
 ### 11. 소수 찾기
     function solution(n) {
       const primes = new Array(n).fill(true);

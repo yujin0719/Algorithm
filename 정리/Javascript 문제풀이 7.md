@@ -20,3 +20,13 @@
         return cnt ? false : true;
     }
     
+### 4. 다음 큰 숫자
+    function solution(n) {
+        const bin_num = n.toString(2).match(/1/g).length;
+        while(true){
+            n ++;
+            if(n.toString(2).match(/1/g).length === bin_num) return n;
+        }
+    }
+
+### 5. 

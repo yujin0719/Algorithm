@@ -1,4 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
+
 ### 26. 하샤드 수
     function solution(x) {
         var total = String(x).split("").reduce((a,c) => Number(a) + Number(c));

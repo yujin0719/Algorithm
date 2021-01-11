@@ -1,4 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
+
 ### 21. 제일 작은 수 제거하기
     function solution(arr) {
       const m = Math.min(...arr);

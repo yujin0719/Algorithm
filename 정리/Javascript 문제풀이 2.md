@@ -1,4 +1,5 @@
 # 프로그래머스 문제풀이 - JavaScript Level1
+
 ### 6. 문자열 내 마음대로 정렬하기
     function solution(strings, n) {
       return strings.sort((a,b) => {

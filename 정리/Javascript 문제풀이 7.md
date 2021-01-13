@@ -53,3 +53,29 @@
             return Math.max(...land[0]);
 
         }
+        
+### 6. 숫자의 표현
+    function solution(n) {
+        var answer = 0;
+        let arr = [];
+        let total = 0;
+        for(let i = 1; i <= n; i++){
+            arr.push(i);
+            total += i;
+            while(total > n){
+                total -= arr.shift();
+            }
+            if(total === n){
+                answer += 1;
+                total -= arr.shift();
+            }
+        }
+        return answer;
+    }
+
+### 7. 최댓값과 최솟값
+    function solution(s) {
+        let arr = s.split(' ').map(v => parseInt(v));
+        return [Math.min(...arr),Math.max(...arr)].join(" ");
+    }
+    

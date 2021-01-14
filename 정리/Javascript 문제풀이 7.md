@@ -79,3 +79,34 @@
         return [Math.min(...arr),Math.max(...arr)].join(" ");
     }
     
+### 8. 최솟값 만들기
+    function solution(A,B){
+        A.sort((a, b) => a - b)
+        B.sort((a, b) => b - a)
+        return A.reduce((total, val, idx) => total + val * B[idx], 0)
+    }
+### 9. 피보나치 수
+    function solution(n) {
+        let F = [];
+        F[0] = 0;
+        F[1] = 1;
+        for(let i = 2; i <= n; i++)
+            F[i] = (F[i-1] + F[i-2]) % 1234567;
+        return F[n];
+    }
+### 10. JadenCase 문자열 만들기
+    function solution(s) {
+        return s.split(" ").map((e) => e.split("").map((v, i) => i ? v.toLowerCase() : v.toUpperCase()).join("")).join(" ");
+    }
+### 11. N개의 최소공배수
+    function solution(arr) {
+        arr.sort((a,b) => a-b);
+        let num = arr[arr.length-1];
+        let base = arr[arr.length-1];
+        while(true){
+            let total = arr.reduce((a,c,i) => a + num % c, 0);
+            if(total === 0) 
+                return num;
+            num += base;
+        }
+    }

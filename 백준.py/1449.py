@@ -1,4 +1,4 @@
-// 1449 : 수리공항승
+# 1449 : 수리공항승
 
 n,L = map(int,input().split())
 data = list(map(int,input().split()))

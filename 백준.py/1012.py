@@ -22,8 +22,7 @@ for _ in range(int(input())):
                     cur = q.pop(0)
                     for k in range(4):
                         nx, ny = cur[0] + dx[k], cur[1] + dy[k]
-                        if nx >= 0 and nx < n and ny >= 0 and ny < m and field[
-                                nx][ny] == 1:
+                        if nx >= 0 and nx < n and ny >= 0 and ny < m and field[nx][ny] == 1:
                             q.append((nx, ny))
                             field[nx][ny] = 2
     print(cnt)

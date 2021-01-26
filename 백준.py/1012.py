@@ -1,5 +1,4 @@
-import sys
-input = sys.stdin.readline
+# 1012: 유기농 배추
 
 dx = [1, -1, 0, 0]
 dy = [0, 0, 1, -1]

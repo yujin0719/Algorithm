@@ -11,7 +11,7 @@ def backtracking(last):
 		if i in arr:
 			continue
 		arr.append(i)
-		backtracking(i)
+		backtracking(i) 
 		arr.pop()
 
 backtracking(0)

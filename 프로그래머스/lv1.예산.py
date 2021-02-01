@@ -1,4 +1,4 @@
-// Level1: 예산
+# Level1: 예산
 
 def solution(d, budget):
     d.sort()

@@ -37,4 +37,4 @@ while True:
 	for i in range(n):
 		for j in range(n):
 			world[i][j] = union[vis[i][j]][0] // union[vis[i][j]][1]
-print(result) 
+print(result) ㄴ구

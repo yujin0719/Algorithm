@@ -1,4 +1,4 @@
-# Level3: 단속카메리
+# Level3: 단속카메라
 def solution(routes):
     answer = 0
     routes.sort(key = lambda x : x[1])

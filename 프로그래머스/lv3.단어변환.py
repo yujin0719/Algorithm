@@ -11,11 +11,7 @@ def solution(begin, target, words):
             return check[words.index(cur)]
         for i in range(len(words)):
             if check[i] == 0:
-                cnt = 0
-                for j in range(len(words[i])):
-                    if cur[j] == words[i][j]:
-                        cnt += 1
-                if cnt == len(cur)-1:
+                if sum([x!=y for x,y in zip(cur,words[i])]) == 1:
                     queue.append(words[i])
                     if cur == begin:
                         check[i] = 1

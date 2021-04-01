@@ -13,4 +13,5 @@ def solution(genres, plays):
     for genre in cnt:
         songs = sorted(category[genre], key = lambda x : x[1], reverse = True)
         answer += [x[0] for x in songs[:2]]
+        
     return answer

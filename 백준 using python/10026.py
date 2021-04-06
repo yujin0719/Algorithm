@@ -23,6 +23,7 @@ for i in range(n):
 					if 0 <= nx < n and 0 <= ny < n and check[nx][ny] == 0 and board[nx][ny] == color:
 						q.append((nx,ny))
 						check[nx][ny] = 1
+                        
 for i in range(n):
 	for j in range(n):
 		if check[i][j] != 2:

@@ -22,3 +22,4 @@ def solution(gems):
                 break
             dict[gems[right]] += 1
     return answer
+    

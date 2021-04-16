@@ -1,16 +1,21 @@
 # 섬 연결하기 
 def solution(n, costs):
-    answer = 0
     costs.sort(key = lambda x : x[2])
-    connect = set()
-    connect.add(0)
-    while len(connect) != n:
-        for v1,v2,cost in costs:
-            if v1 in connect and v2 in connect:
-                continue
-            if v1 in connect or v2 in connect:
-                connect.add(v1)
-                connect.add(v2)
-                answer += cost
-                break
-    return answer
+    connect = []
+    parent = [x for x in range(n+1)]
+    def find(target):
+        if target != parent[target]:
+            parent[target] = find(parent[target])
+        return parent[target]
+    def union(u,v):
+        u = find(u)
+        v = find(v)
+        if u < v:
+            parent[v] = u
+        else :
+            parent[u] = v
+    for u,v,w in costs:
+        if find(u) != find(v):
+            union(u,v)
+            connect.append(w)
+    return sum(connect)

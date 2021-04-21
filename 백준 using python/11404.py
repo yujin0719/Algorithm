@@ -1,4 +1,5 @@
 # 11404: 플로이드
+
 n = int(input())
 m = int(input())
 inf = 100000000

@@ -1,4 +1,4 @@
-# 줄 서는 방법
+#Level3 : 줄 서는 방법
 import math
 def solution(n, k):
     answer = []

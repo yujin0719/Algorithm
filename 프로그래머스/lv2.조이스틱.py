@@ -8,14 +8,14 @@ def solution(name):
         vertical[position] = 0 
         if sum(vertical) == 0:
             return answer
-        left,right = 0,0
+        left,right = 1,1
         while vertical[position - left] == 0:
             left += 1
         while vertical[right + position] == 0:
             right += 1
         if left >= right :
             answer += right
-            position = right
+            position += right
         else :
             answer += left
-            position = -left
+            position -= left

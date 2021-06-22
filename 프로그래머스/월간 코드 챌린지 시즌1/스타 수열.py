@@ -1,4 +1,4 @@
-# 스타수열
+# 스타 수열
 from collections import Counter
 def solution(a):
     answer = 0

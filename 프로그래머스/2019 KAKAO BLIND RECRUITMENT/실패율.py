@@ -1,4 +1,5 @@
 # 실패율
+
 from bisect import bisect_left, bisect_right
 def solution(N, stages):
     stages.sort()

@@ -1,7 +1,7 @@
 // 징검다리 건너기
 function solution(stones, k) {
     let answer = 0;
-    let left = 1, right = Math.max(...stones);
+    let left = 0, right = 200000000;
     while(left <= right){
         const mid = Math.floor((left + right) / 2);
         let cnt = 0;

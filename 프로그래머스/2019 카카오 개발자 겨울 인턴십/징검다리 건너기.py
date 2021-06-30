@@ -1,7 +1,7 @@
 # 징검다리 건너기
 def solution(stones, k):
     answer = 0
-    left,right = 1, max(stones)
+    left,right = 0, 200000000
     while left <= right:
         mid = (left + right) // 2
         cnt = 0
